@@ -4,6 +4,7 @@ import { JwtService } from '@nestjs/jwt';
 import { PrismaClientKnownRequestError } from '@prisma/client/runtime';
 import * as argon from 'argon2';
 import { PrismaService } from '../prisma/prisma.service';
+import { GetCurrentUserId } from './decorator';
 
 import { AuthDto } from './dto';
 import { JwtPayload, Tokens } from './types';
